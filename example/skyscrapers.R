@@ -153,9 +153,6 @@ f <- function(alpha, lambda, x, lx) {
     (alpha - 1) * lx - lambda * x
 }
 
-f_prime <- function(alpha, lambda, x, lx) {
-  c(38033 * log(lambda) - 38033 * digamma(alpha) + lx,
-    38033 * alpha / lambda - x)
 }
 
 f_prime(param[1], param[2], 
